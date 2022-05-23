@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benevolence Well</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/normalize.css">
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <header>
+        <img src="public/logo1_ccexpress - Copy.png" alt="site logo" class="headerIMG">
+    </header>
+
+    <main class="primary">
+        <section class="box one">
+            <h5 class="prompt">Add your Gratitude</h5>
+            <form action="/gratitude" method="POST">
+                <div>
+                    <label for="alias">Enter an Alias (Code Name):</label>
+                    <input type="text" placeholder="Your nickname" name="alias" required>
+                </div>
+                <div>
+                    <label for="gratitude">Enter Your Gratitude:</label>
+                    <textarea name="gratitude" id="gratitude" cols="30" rows="10" placeholder="Write your gratitude here." required></textarea>
+                </div>
+                <div>
+                    <label for="country">Enter your country:</label>
+                    <input type="text" placeholder="Your country" name="country">
+                </div>
+            </form>
+            <h5>What is this?</h5>
+            <p class="details">The Restorative Well is a collection of anonymous stories of gratitude from around the world.</p>
+            <h5>How should I use it?</h5>
+            <p class="details">Visitors of the restorative well can read the different messages of gratitude to help bring a positive and calming effect to their current situation. Find a piece of gratitude that makes you smile. Consider leaving a note of gratitude for the next visitor.</p>
+            <p class="details">The Restorative Well is for visitors of all ages, cultures, and identities.</p>
+        </section>
+        <section class="box two">
+            <h5 class="prompt head">The Oasis</h5>
+            <ul class="gratitudes">
+            <!-- 
+                <% for(let i = 0; i < gratitudes.length; i++) {%>
+                    <li class="gratitude">
+                        <span><%= gratitudes[i].alias %></span>
+                        <span><%= gratitudes[i].gratitude %></span>
+                        <span><%= gratitudes[i].country %></span>
+                    </li>
+                <% } %>
+             -->
+            </ul>
+        </section>
+    </main>
+    
+    
+    <script src="public/main.js"></script>
+</body>
+</html>
