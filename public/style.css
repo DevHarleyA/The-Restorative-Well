@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Patrick Hand', Arial, Helvetica, sans-serif;
+    background: url('nature-6780354_1920.jpg')
+}
+
+/* header styling */
+
+header {
+    display: flex;
+    justify-content: center;
+    background: rgb(228,243,235);
+}
+
+.headerIMG {
+    height: 140px;
+    margin: 1%;
+}
+
+/* main styling */
+
+.primary {
+    display: flex;
+    justify-content: center;
+    margin: 1% 10%;
+    background: rgba(24,98,61, .8);
+    color: rgba(228,243,235,255);
+}
+
+.one {
+    width: 65%;
+}
+
+.two {
+    width: 35%;
+}
+
+h5, .details, .prompt {
+    letter-spacing: .2rem;
+    margin: 1% 10%;
+}
+
+h5 {
+    font-size: 2.5rem;
+    text-decoration: underline rgb(65,220,145);
+}
+
+.details {
+    font-size: 2rem;
+}
+
+.prompt {
+    text-decoration: underline overline rgb(65,220,145);
+    font-size: 3rem;
+    padding: 1%;
+}
+
+form {
+    font-size: 2rem;
+    margin: 2% 2% 2% 10%;
+    
+}
+
+label {
+    display: block;
+    margin: 1%;
+}
+
+.head {
+    text-align: center;
+    margin: 3%;
+}
+
+.gratitudes {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    list-style: none;
+    overflow: scroll;
+    height: 400px;
+}
+
+li {
+    margin: 3% 1%;
+}
+
+.alias {
+    font-size: 2rem;
+    text-decoration: underline;
+    color: lightblue;
+}
+
+.country {
+    font-size: 1rem;
+    color: lightblue;
+}
