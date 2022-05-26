@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benevolence Well</title>
+    <script src="https://kit.fontawesome.com/265ed8ed5a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo1_ccexpress - Copy.png" alt="site logo" class="headerIMG">
+    </header>
+
+    <main class="primary">
+        <section class="box one">
+            <h5 class="prompt">Add your Gratitude</h5>
+            <form action="/gratitudes" method="POST">
+                <div>
+                    <label for="alias">Enter an Alias (Code Name):</label>
+                    <input type="text" placeholder="Your nickname" name="alias" required>
+                </div>
+                <div>
+                    <label for="gratitude">Enter Your Gratitude:</label>
+                    <textarea name="gratitude" id="gratitude" cols="30" rows="10" placeholder="Write your gratitude here." required></textarea>
+                </div>
+                <div>
+                    <label for="country">Enter your country:</label>
+                    <input type="text" placeholder="Your country" name="country">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <h5>What is this?</h5>
+            <p class="details">The Restorative Well is a collection of anonymous stories of gratitude from around the world.</p>
+            <h5>How should I use it?</h5>
+            <p class="details">Visitors of the restorative well can read the different messages of gratitude to help bring a positive and calming effect to their current situation. Find a piece of gratitude that makes you smile. Consider leaving a note of gratitude for the next visitor.</p>
+            <p class="details">The Restorative Well is for visitors of all ages, cultures, and identities. Moderators check regularly to make sure no posts violate our space. Please use the flag to report bad posts!</p>
+        </section>
+        <section class="box two">
+            <h5 class="prompt head">The Oasis</h5>
+            <ul class="gratitudes">
+                <% for(let i = 0; i < gratitudes.length; i++) {%>
+                    <li class="gratitude">
+                        <span class="alias"><%= gratitudes[i].alias %>:</span>
+                        <span class="grat"><%= gratitudes[i].gratitude %></span>
+                        <span class="country">From: </span><span class="country"><span class="country"><%= gratitudes[i].country %></span></span>
+                        <span><i class="fa-solid fa-dove fa-xl"></i></span>
+                        <span class="peace"><%= gratitudes[i].peace %></span>
+                        <span><i class="fa-solid fa-flag fa-xl"></i></span>
+                        <span class="report"><%= gratitudes[i].report %></span>
+                    </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>

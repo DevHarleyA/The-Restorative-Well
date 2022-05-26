@@ -37,7 +37,6 @@ header {
 
 .two {
     width: 35%;
-    overflow: scroll;
 }
 
 h5, .details, .prompt {
@@ -74,4 +73,27 @@ label {
 .head {
     text-align: center;
     margin: 3%;
+}
+
+.gratitudes {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    list-style: none;
+    overflow: scroll;
+    height: 400px;
+}
+
+li {
+    margin: 3% 1%;
+}
+
+.alias {
+    font-size: 2rem;
+    text-decoration: underline;
+    color: lightblue;
+}
+
+.country {
+    font-size: 1rem;
+    color: lightblue;
 }
