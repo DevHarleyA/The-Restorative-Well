@@ -16,7 +16,7 @@ MongoClient.connect(configDB.connectionURL, { useNewUrlParser: true, useUnifiedT
     app.use(express.static('public'))
 
     app.get('/', (req, res) => {
-      db.collection('gratitudes').find().toArray()
+      gratsCollection.find().toArray()
         .then(results => {
           res.render('index.ejs', { gratitudes: results })
         })
